@@ -3,8 +3,11 @@ package com.example.animationbasics
 import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import android.widget.ToggleButton
+import java.lang.Exception
 
 class AnimationsBasics : AppCompatActivity() {
 
@@ -23,5 +26,17 @@ class AnimationsBasics : AppCompatActivity() {
         anim.setDuration(1000);
         anim.setRepeatCount(1000);
         anim.setRepeatMode(ObjectAnimator.RESTART);
+    }
+
+    fun spin(view: View) {
+        //1 - runOnUiThread Approach
+        val thread = Thread(Runnable {
+            runOnUiThread {
+
+
+            }
+        })
+
+        thread.start()
     }
 }
