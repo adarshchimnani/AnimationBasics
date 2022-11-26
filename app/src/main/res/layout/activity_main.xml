@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".AnimationsBasics">
 
     <ImageView
@@ -18,6 +20,7 @@
         android:layout_height="wrap_content"
         android:checked="false"
         android:text="ToggleButton"
+        android:onClick="spin"
         tools:layout_editor_absoluteX="161dp"
         tools:layout_editor_absoluteY="383dp" />
 
